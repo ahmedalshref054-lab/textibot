@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, follow" />
+  <title data-ar="اتصل بنا | أدوات النصوص" data-en="Contact Us | TextTools Pro">اتصل بنا | أدوات النصوص</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text" data-ar="أدوات النصوص" data-en="TextTools Pro">أدوات النصوص</span>
+      </a>
+      <div class="header-controls">
+        <button id="lang-toggle" class="ctrl-btn"><span id="lang-label">EN</span></button>
+        <button id="theme-toggle" class="ctrl-btn"><span id="theme-icon">☀</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container tools-section" style="padding-top: 40px; grid-template-columns: 1fr; max-width: 600px; margin: 0 auto;">
+    <article class="tool-card">
+      <div class="tool-header">
+        <span class="tool-badge">✉</span>
+        <div>
+          <h2 class="tool-title" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h2>
+          <p class="tool-desc" data-ar="لديك استفسار أو اقتراح لتطوير الأداة؟ راسلنا مباشرة" data-en="Have an inquiry or suggestion to improve the tool? Message us directly"></p>
+        </div>
+      </div>
+      
+      <form action="mailto:ahmed-email@example.com" method="post" enctype="text/plain" class="input-wrap" style="flex-direction: column; gap: 15px;">
+        <input type="text" class="keyword-field" style="width:100%; padding:12px; border-radius:6px;" required placeholder="الاسم بالكامل..." data-placeholder-ar="الاسم بالكامل..." data-placeholder-en="Your Full Name..." />
+        <textarea class="main-textarea" style="min-height: 120px; width:100%; border-radius:6px; padding:12px;" required placeholder="اكتب رسالتك هنا..." data-placeholder-ar="اكتب رسالتك هنا..." data-placeholder-en="Write your message here..."></textarea>
+        <button type="submit" class="generate-btn" style="width: 100%; padding:14px; font-weight:bold; cursor:pointer;">
+          <span data-ar="✉ إرسال الرسالة" data-en="✉ Send Message">إرسال الرسالة</span>
+        </button>
+      </form>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

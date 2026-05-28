@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://textibot.vercel.app/sitemap.xml
