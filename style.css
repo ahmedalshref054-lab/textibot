@@ -734,3 +734,58 @@ body.light-mode .site-header {
 
 [dir="rtl"] .main-textarea,
 [dir="rtl"] .keyword-field { text-align: right; }
+/* ضبط الموقع بالكامل لشاشات الموبايل (أقل من 768px) */
+@media (max-width: 768px) {
+  
+  /* منع أي عنصر من الخروج بره الشاشة وتجنب السكرول الجانبي */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* تظبيط الهيدر عشان العناصر ما تخبطش في بعضها */
+  .header-inner {
+    flex-direction: row; /* الحفاظ على اللوجو والأزرار في سطر واحد */
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+  .logo-text {
+    font-size: 1.1rem; /* تصغير حجم اللوجو سنة عشان يكفي */
+  }
+
+  /* تصغير حجم أزرار التحكم ومحاذاتها */
+  .header-controls {
+    gap: 8px;
+  }
+
+  .ctrl-btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  /* تظبيط المحتوى الداخلي والكروت (SEO Content) */
+  .seo-content {
+    padding: 20px 15px !important; /* تقليل الحواف الجانبية */
+  }
+
+  .section-title {
+    font-size: 1.6rem; /* تصغير العنوان الرئيسي ليناسب الشاشة */
+    margin-bottom: 20px !important;
+  }
+
+  /* تظبيط الكروت اللي باينة في الصورة */
+  .article-block {
+    padding: 15px !important; /* تقليل الحشو الداخلي للكارت */
+    margin-bottom: 15px !important;
+  }
+
+  .article-block h3 {
+    font-size: 1.2rem; /* ضبط حجم عنوان الكارت */
+  }
+
+  .article-block p {
+    font-size: 0.95rem; /* ضبط حجم الخط للبراجراف ليكون مريح في القراءة */
+    line-height: 1.6;
+  }
+}
